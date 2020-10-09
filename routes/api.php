@@ -26,6 +26,7 @@ Route::get('/robots-file', function (Request $request) {
 	} else {
 		file_put_contents($filepath, $contents);
 	}
+
 	return [
 		'contents' => $contents,
 		'updated_at' => $updatedAt,
@@ -37,6 +38,7 @@ Route::post('/robots-file', function (Request $request) {
 	$contents = $request->get('contents');
 	file_put_contents($filepath, $contents);
 	$updatedAt = Carbon::now()->toIso8601String();
+
 	return [
 		'contents' => $contents,
 		'updated_at' => $updatedAt,
