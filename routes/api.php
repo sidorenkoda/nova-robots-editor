@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/robots-file', function (Request $request) {
 
-	$filepath = config('robots_txt_path', base_path('public/robots.txt'));
+	$filepath = config('nova-robots-editor.robots_txt_path', base_path('public/robots.txt'));
 	$contents = '';
 	$updatedAt = null;
 	if (file_exists($filepath)) {
@@ -35,7 +35,7 @@ Route::get('/robots-file', function (Request $request) {
 });
 
 Route::post('/robots-file', function (Request $request) {
-	$filepath = config('robots_txt_path', base_path('public/robots.txt'));
+	$filepath = config('nova-robots-editor.robots_txt_path', base_path('public/robots.txt'));
 	$contents = $request->get('contents');
 	file_put_contents($filepath, $contents);
 	$updatedAt = Carbon::now()->toIso8601String();
