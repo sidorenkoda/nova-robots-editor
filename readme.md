@@ -4,7 +4,7 @@ This Laravel Nova Tool gives your admins the ability to edit the robots.txt file
 
 ## Installation
 
-`composer require razorcreations/nova-robots-editor`
+`composer require sidorenkoda/nova-robots-editor`
 
 Add the following to your tools array in the `app/Providers/NovaServiceProvider`:
 
@@ -13,7 +13,7 @@ Add the following to your tools array in the `app/Providers/NovaServiceProvider`
 	{
 		return [
 			// ...
-			new Razorcreations\NovaRobotsEditor\NovaRobotsEditor(),
+			new Sidorenkoda\NovaRobotsEditor\NovaRobotsEditor(),
 		];
 	}
 ```

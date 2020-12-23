@@ -1,6 +1,6 @@
 <?php
 
-namespace Razorcreations\NovaRobotsEditor;
+namespace Sidorenkoda\NovaRobotsEditor;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;

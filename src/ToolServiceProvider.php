@@ -1,12 +1,12 @@
 <?php
 
-namespace Razorcreations\NovaRobotsEditor;
+namespace Sidorenkoda\NovaRobotsEditor;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
-use Razorcreations\NovaRobotsEditor\Http\Middleware\Authorize;
+use Sidorenkoda\NovaRobotsEditor\Http\Middleware\Authorize;
 
 class ToolServiceProvider extends ServiceProvider
 {
@@ -34,6 +34,7 @@ class ToolServiceProvider extends ServiceProvider
 	 */
 	public function register()
 	{
+        $this->mergeConfigFrom(__DIR__.'/../config/nova-robots-editor.php', 'nova-robots-editor');
 	}
 
 	/**

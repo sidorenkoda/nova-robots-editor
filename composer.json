@@ -1,6 +1,6 @@
 {
-    "name": "razorcreations/nova-robots-editor",
-    "description": "A Laravel Nova tool.",
+    "name": "sidorenkoda/nova-robots-editor",
+    "description": "A Laravel Nova tool fork.",
     "keywords": [
         "laravel",
         "nova"
@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Razorcreations\\NovaRobotsEditor\\": "src/"
+            "Sidorenkoda\\NovaRobotsEditor\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Razorcreations\\NovaRobotsEditor\\ToolServiceProvider"
+                "Sidorenkoda\\NovaRobotsEditor\\ToolServiceProvider"
             ]
         }
     },

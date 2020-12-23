@@ -1,9 +1,9 @@
 <?php
 
-namespace Razorcreations\NovaRobotsEditor\Http\Middleware;
+namespace Sidorenkoda\NovaRobotsEditor\Http\Middleware;
 
 use Laravel\Nova\Nova;
-use Razorcreations\NovaRobotsEditor\NovaRobotsEditor;
+use Sidorenkoda\NovaRobotsEditor\NovaRobotsEditor;
 
 class Authorize
 {
